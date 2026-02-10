@@ -1,2 +1,8 @@
-# Realtime_Deepfake
-This is a real time deepfake video detector tool which can be integrated with any platform.
+Deepfake environment:
+deepfake_env/Scripts/activate
+
+Terminal 1:
+uvicorn api.server:app --host 127.0.0.1 --port 8000
+
+Terminal 2:
+python webcam_client.py
