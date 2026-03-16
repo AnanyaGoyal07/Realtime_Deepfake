@@ -5,4 +5,4 @@ Terminal 1:
 uvicorn api.server:app --host 127.0.0.1 --port 8000
 
 Terminal 2:
-python webcam_client.py
+python zoom_virtual_cam.py

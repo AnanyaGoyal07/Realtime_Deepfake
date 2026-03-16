@@ -91,10 +91,6 @@ class DeepFakeDetector:
             lstm_input = np.expand_dims(features_array, axis=0)
             probs = self.video_model.predict(lstm_input, verbose=0)
 
-            # ---- LSTM Prediction ----
-            lstm_input = np.expand_dims(cnn_features, axis=0)
-            probs = self.video_model.predict(lstm_input, verbose=0)
-
             avg_prob = float(probs.mean())
 
             # ---- Smoothing ----
