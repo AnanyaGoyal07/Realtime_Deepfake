@@ -5,7 +5,7 @@ import time
 
 API_URL = "http://127.0.0.1:8000/analyze-frame"
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 
 if not cap.isOpened():
     raise RuntimeError("Webcam not accessible")

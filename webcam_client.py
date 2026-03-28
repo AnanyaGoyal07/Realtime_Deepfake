@@ -1,6 +1,7 @@
 import cv2
 import requests
 import time
+import pyvirtualcam
 
 API_URL = "http://127.0.0.1:8000/analyze-frame"
 
